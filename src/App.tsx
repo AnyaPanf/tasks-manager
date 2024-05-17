@@ -12,8 +12,8 @@ export const App: React.FC = () => {
   { id: '2', text: 'Finish the project' },
   { id: '3', text: 'Buy cat food!!!' },
   { id: '4', text: 'Call Grandma' },
-  { id: '5', text: 'Go to the gym (finally)' }])
-  const [finishedTasks, setFinishedTasks] = useState<tasksData[]>([])
+  { id: '5', text: 'Go to the gym (finally)' },]);
+  const [finishedTasks, setFinishedTasks] = useState<tasksData[]>([]);
   const [isChecked, setIsChecked] = useState<string>();
 
   const handleRight = () => {
