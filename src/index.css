@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f1ed;
+    background-image: url('../src/assets/bcg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+input {
+    display: none;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.tasks {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    margin: 20px 0;
+}
+
+.tasks__list {
+    width: 100%;
+    height: 90vh;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+.tasks__title {
+    text-align: center;
+    color: #000000;
+}
+
+.tasks__arrows {
+    display: grid;
+    grid-template-columns: 100%;
+    place-content: center;
+}
+
+.arrow {
+    width: 55px;
+}
+
+.arrow__right {
+    transform: rotate(180deg);
+    margin-top: 10px;
+}
+
+.tasks__btn {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.tasks__task {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.tasks__task label {
+    padding: 0 5px;
+}
+
+.tasks__task-notchecked {
+    background-color: #ffffff;
+}
+
+.tasks__task-checked {
+    background-color: #ffef0dc5;
+}
